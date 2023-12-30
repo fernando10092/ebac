@@ -1,0 +1,39 @@
+#formulario{
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
+    width: 40%;
+    height: 400px;
+    padding: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+}
+
+input{
+    width: 200px;
+    border-radius: 10px;
+    height: 30px;
+    
+}
+
+button{
+    width: 200px;
+    margin: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: teal;
+}
+
+#labelName{
+    background-color: red;
+}
+
+labe{
+    color: brown;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="formulario">
+
+        <h1>
+            Formulário
+        </h1>
+
+        <form id="myForm">
+            <label>Campo A</label>
+            <br />
+            <input id="num1" name="campo1" type="number" placeholder="Digite um numero..." required>
+            <br />
+            <label id="labelMsg1"></label>
+            <br/>
+
+            <label>Campo B</label>
+            <br />
+            <input id="num2" name="campo2" type="number" placeholder="Digite um numero..." required>
+            <br />
+            <button id="enviar" name="btEnviar" type="submit">ENVIAR</button>
+            <br/>
+            <label id="labelName"></label>
+            <script>
+               /* document.getElementById("enviar").addEventListener("click", function(event){
+                    event.preventDefault();
+                    //document.getElementById("labelName").textContent = "FERNANDO";
+                    //document.getElementById("labelName").innerHTML = "I have changed!";
+                
+
+                })*/
+
+
+               /* document.getElementById("enviar").addEventListener("click", function(){
+                    event.preventDefault()
+                    var val1 = parseInt(document.getElementById("num1").value);
+                    var val2 = parseInt(document.getElementById("num2").value);
+                    if(val2 > val1){
+                        console.log("Validado")
+            
+                        var labe = document.createElement("label");
+                        labe.innerHTML = "Parabens";
+                        document.body.append(labe);
+                        labe.style.color = "red"
+                        //document.getElementById("labelMsg1").textContent = "Muito pequeno!"
+                    }else{
+                        console.log("Invalidado")
+                        //document.getElementById("labelMsg1").textContent = "";
+                    }
+
+                })*/
+
+            </script>
+        </form>
+
+    </div>
+
+    <script>
+
+        // Adiciona um ouvinte de evento para o formulário
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            // Impede o envio padrão do formulário
+            event.preventDefault();
+
+            // Pega os valores dos campos no momento do envio
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+
+            if (b > a) {
+                alert("Formulario Validado!!!")
+                document.getElementById("labelName").innerHTML = ""
+                console.log("Validado")
+                document.getElementById("num1").value = ""
+                document.getElementById("num2").value = ""
+                
+            } else {
+                document.getElementById("labelName").innerHTML = "Valor não validado! <br/>'Campo B' NÃO é maior que o 'Campo A'"
+                console.log("Não Validado")
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
