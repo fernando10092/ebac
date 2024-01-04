@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>AGENDA DE CONTATOS</h1>
+        <form>
+            <input required name="nNome" id="idNome" type="text" placeholder="Nome"><br/>
+            <input required name="nContato" id="idContato" type="tel" placeholder="(XX) XXXXX-XXXX"><br/>
+            <label id="lbInfo"></label>
+            <button name="nEnviar" id="idEnviar" type="submit">Adicionar</button>
+        </form>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+            <tr>
+                <td id="tdNome"></td>
+                <td id="tdContato"></td>
+            </tr>
+            <tr>
+                <tfoot id="idFooter"></tfoot>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <script src="code.js">
+
+    </script>
+
+
+</body>
+
+</html>
