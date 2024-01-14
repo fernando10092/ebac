@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding-top: 15px;
+    text-align: center;
+    background-color: aqua;
+    width: 100vw;
+    height: 100px;
+}
+
+#insertImg{
+    padding-top: 15px;
+    text-align: center;
+    background-color: gray;
+    height: 80px;
+    display: none;
+ 
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+button{
+    background-color: green;
+    color: white;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    width: 25%;
+    max-height: 200px;
+    overflow-y: hidden;
+
+}
+
+
+.tratText{
+    
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+
+}
+
+ul li:hover .tratText{
+    
+    opacity: 1;
+
+}
+
+.clImg{
+    width: 200px;
+    height: 200px;
+}

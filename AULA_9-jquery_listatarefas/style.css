@@ -1,0 +1,77 @@
+body{
+    background-color: brown;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#conteudo{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50%;
+    padding-bottom: 200px;
+    padding-top: 100px;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#divLista{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    border: none;
+}
+
+li{
+    background-color: aliceblue;
+    border: groove;
+    width: 100%;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 10px;
+    
+}
+
+li:hover{
+    background-color: gray;
+    color: black;
+    
+}
+
+input{
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    color: black;
+    background-color: antiquewhite;
+    border: solid;
+}
+
+button{
+    background-color: burlywood;
+    font-weight: bolder;
+    color: white;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: black
+}
