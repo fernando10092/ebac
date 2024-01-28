@@ -1,3 +1,4 @@
+//PARA BAIXAR OS PLUGINS, ESCOLHA NO GOOGLE O PLUGIN JQUERY, BAIXE E ENVIE O ARQUIVO NO SRC PARA SEU PROJETO / INSIRA TAMBEM NO HTML CODE
 var contador = 0;
 $(document).ready(function () {
     $("#btEnviar").on("click", function (event) {
