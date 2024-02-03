@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    
+}
+
+#conteudo{
+    margin: 0 auto;
+    background-color: teal;
+    width: 50%;
+    min-height: 100vh;
+    padding: 25px;
+    text-align: center;
+    border: double;
+}
+
+
+
+h1{
+    color: antiquewhite;
+}
+
+input{
+    margin: 10px;
+}
+
+#liveAlertBtn{
+    width: 150px;
+    margin-top: 30px;
+  
+}
+
+.controleForm{
+    display: block;
+   
+  
+}
+
+.form-label{
+    margin-top: 10px;
+    color: white;
+}
