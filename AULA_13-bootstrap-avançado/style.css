@@ -1,5 +1,9 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 #carouselExampleDark{
-    width: 100%;
+    max-width: 100%;
     height: 400px;
     margin: 0 auto;
     overflow-y: hidden;
@@ -16,7 +20,9 @@
 
 p{
     text-align: justify;
+  
 }
+
 
 
 .card{
@@ -34,6 +40,14 @@ footer{
     color: white;
     height: 300px;
    
+}
+
+.d-block{
+    height: 400px;
+   
+}
+h5{
+    color: white;
 }
 
 @media screen and (max-width: 880px) {
