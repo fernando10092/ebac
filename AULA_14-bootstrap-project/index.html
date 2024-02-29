@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+    <!--CARROSEL-->
+    <header>
+        <!--BARRA-->
+        <nav id="barra">
+            <div>
+                <img src="icon/speed.png" id="contentLogo">
+            </div>
+            <!-- <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#idscCarro1">Esportivos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#idscCarro2">Classicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#idscAticle">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#idscOutros">Veja mais</a>
+                </li>
+
+            </ul> -->
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#idscCarro1">Esportivos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#idscCarro2">Classicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#idscAticle">História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#idscOutros">Veja mais</a>
+                </li>
+
+            </ul>
+
+            <!--MENU SMARTPHONE-->
+            <div id="menuSmart" class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENU
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idscCarro1">Esportivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idscCarro2">Classicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idscAticle">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idscOutros">Veja mais</a>
+                    </li>
+                </ul>
+              </div>
+
+        </nav>
+
+
+    </header>
+
+    <!--SPY-->
+    <div id="conteudoPag" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -80%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+
+        <!--CARROSEL-->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+            data-bs-interval="9000">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <!--VIDEO-->
+                    <video muted autoplay loop class="d-block w-100" alt="...">
+                        <source src="video/video5.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--DESCRITIVO-->
+                        <h5>Paixão por Velocidade</h5>
+                        <p>Descubra a arte do automobilismo mundial.</p>
+                        <!--ICONE BAIXO-->
+                        <a href="#idscCarro1"><img class="icones" src="icon/down.png"></a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <!--VIDEO-->
+                    <video muted autoplay loop class="d-block w-100" alt="...">
+                        <source src="video/video4.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--DESCRITIVO-->
+                        <h5>Design Tecnologico</h5>
+                        <p>A melhor aerodinâmica para um melhor desenpenho.</p>
+                        <!--ICONE BAIXO-->
+                        <a href="#idscCarro1"><img class="icones" src="icon/down.png"></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--VIDEO-->
+                    <video muted autoplay loop class="d-block w-100" alt="...">
+                        <source src="video/video3.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--DESCRITIVO-->
+                        <h5>Ronco do motor</h5>
+                        <p>Potência para qualquer tipo de estrada.</p>
+                        <!--ICONE BAIXO-->
+                        <a href="#idscCarro1"><img class="icones" src="icon/down.png"></a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+        <!--BANNER-->
+        <section id="banner">
+            <img src="img/carvet1.svg">
+        </section>
+
+
+
+        <!--SECAO 1 - COMPRAR CARROS-->
+        <section class="scCarro1" id="idscCarro1">
+            <div class="row">
+                <div class="col">
+                    <h1 class="titulos">Carros Esportivos</h1>
+
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <ul class="d-block w-100">
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro3.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro27.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro9.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item">
+                                <ul class="d-block w-100">
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro12.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro13.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro7.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro8.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item">
+                                <ul class="d-block w-100">
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro26.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro10.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro28.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro25.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--SECAO 2 - COMPRAR CARROS ANTIGOS-->
+        <section class="scCarro2" id="idscCarro2">
+            <div class="row">
+                <div class="col">
+
+                    <h1 class="titulos">Carros Classicos</h1>
+
+                    <div id="carouselExample2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <ul class="d-block w-100">
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro4.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro14.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro15.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro16.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item">
+                                <ul class="d-block w-100">
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro17.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro18.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro19.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro20.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item">
+                                <ul class="d-block w-100">
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro21.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro22.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro23.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="lisCar">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/carro24.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Detalhes</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--SECAO 3 ARTICLE-->
+        <section class="scArticle" id="idscAticle">
+            <div class="row">
+                <h1 class="titulos">História</h1>
+                <div class="col" id="col1Article">
+                    <h1>Sobre a Marca</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, laudantium at, suscipit ab
+                        dolore
+                        fuga placeat quisquam, similique voluptatem aliquid necessitatibus cumque doloremque. Doloribus
+                        magnam dolorum temporibus corporis mollitia culpa.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet beatae reiciendis ratione
+                        distinctio! Totam, incidunt neque. Ex, qui nam minus impedit eum iure nihil quaerat fugit
+                        delectus
+                        corrupti, officia provident.</p>
+                </div>
+                <div class="col" id="col2Article">
+                    <h1>Potencia</h1>
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/carro13.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carro12.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carro11.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--SECAO OUTROS CARROS-->
+        <section class="scOutros" id="idscOutros">
+            <div class="row">
+                <h1 class="titulos">Veja tambem</h1>
+                <div class="col">
+                    <ul class="ulOutros">
+                        <li>
+                            <div class="row row-cols-1 row-cols-md-4 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="img/carro1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="img/carro3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="img/carro4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a
+                                                natural lead-in to additional content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="img/carro5.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--SECAO LAST-->
+        <section class="conteudo4">
+            <div class="row">
+                <div class="col">
+                    <h3>Sobre</h3>
+                </div>
+                <div class="col">
+                    <h3>Contato</h3>
+                </div>
+                <div class="col">
+                    <h3>Trabalhe Conosco</h3>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+
+        </script>
+
+
+
+
+</body>
+
+</html>

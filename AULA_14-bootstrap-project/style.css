@@ -1,0 +1,235 @@
+*{
+    font-family: cursive;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+body{
+    width: 100vw;
+    
+   
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+#barra{
+
+    position: fixed;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgb(1, 1, 1, 1), rgb(1, 1, 1, 0));
+    width: 100%;
+    height: 80px;
+      
+
+}
+
+#conteudoPag{
+    max-width: 100%;
+    
+}
+
+#contentLogo{
+    float: left;
+    
+   
+}
+
+
+.nav {
+    
+    float: right;
+
+}
+
+.nav-item{
+    text-align: end;
+  
+}
+
+
+.nav-link {
+    color: white;
+    margin-top: 10px;
+}
+.nav-link:hover{
+    color: gray;
+}
+
+
+#carouselExampleDark{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    top: 0;
+   
+}
+
+.carousel-caption{
+    
+    margin: 0 auto;
+    top: 65vh;
+}
+
+video {
+
+    width: 100%;
+    
+    
+
+}
+
+.icones{
+    width: 80px;
+    cursor: pointer;
+   
+}
+.icones:hover{
+    width: 90px;
+}
+
+
+.descrMain{
+    top: 50%;
+    left: 40%;
+    z-index: 1;
+    position: absolute;
+    color: black;
+    background-color: red;
+    text-align: center;
+}
+
+#banner{
+    width: 100%;
+    max-height: 400px;
+    overflow-y: hidden;
+    background-color: black;
+  
+ 
+
+}
+
+
+.scCarro1{
+    
+    float: left;
+    background: linear-gradient(to bottom, rgb(1, 1, 1, 0.8), rgb(1, 1, 1, 0));
+    width: 100%;
+    min-height: 70vh;
+
+    
+}
+
+.d-block{
+    list-style: none;
+    
+}
+
+.scCarro2{
+    
+    float: left;
+    background: linear-gradient(to bottom,  rgb(1, 1, 1, 0), rgb(1, 1, 1, 0.8));
+    width: 100%;
+    min-height: 70vh;
+}
+
+
+.scOutros{
+    float: left;
+    background: linear-gradient(to bottom,  rgb(1, 1, 1, 0), rgb(1, 1, 1, 0.8));
+    width: 100%;
+    min-height: 460px;
+}
+
+.ulOutros{
+    list-style: none;
+    max-width: 97%;
+}
+
+.scArticle{
+   min-height: 100vh;
+   float: left;
+   background: linear-gradient(to bottom, rgb(1, 1, 1, 0.8), rgb(1, 1, 1, 0));
+}
+
+#col1Article{
+    padding: 30px;
+    
+}
+
+#col2Article{
+    padding: 30px
+}
+
+.card{
+    margin-top: 30px;
+    width: 300px;
+    display: inline;
+    border: none;
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+.titulos{
+    font-style: italic;
+    font-size: 26px;
+    color: black;
+    text-align: center;
+}
+
+.lisCar{
+    width: 300px;
+    margin: 10px;
+    float: left;
+}
+
+.conteudo4{
+    
+    float: left;
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+}
+
+#menuSmart{
+    display: none;
+}
+
+@media screen and (max-width: 560px) {
+
+
+    .nav {
+    
+        display: none;
+    
+    }
+
+    #menuSmart{
+        display: block;
+        float: right;
+        color: black;
+    
+    }
+    .nav-item{
+        color: black;
+        background-color: black;
+        text-align: center;
+    }
+
+    .btn{
+        margin-top: 15px;
+        background-color: rgb(1, 1, 1, 0.5);
+    }
+    
+    
+}
+
