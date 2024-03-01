@@ -227,9 +227,18 @@ video {
 
     .btn{
         margin-top: 15px;
+        margin-right: 15px;
         background-color: rgb(1, 1, 1, 0.5);
     }
+
+    #banner{
+        height: 150px;
+        
     
+    }
+    #carouselExampleDark{
+        height: 35vh;
+    }
     
 }
 
