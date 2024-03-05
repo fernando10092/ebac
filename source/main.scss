@@ -1,12 +1,11 @@
 //npm i --save-dev sass
 //scripit no package.json: "sass": "sass source/main.scss build/main.css", 
 
-
 //Importando Modulos
 @use 'outro.scss';
 
 //Variaveis
-$cordeFundo: #182C61;
+$cordeFundo: red;
 
 
 
