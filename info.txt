@@ -1,0 +1,21 @@
+Neste exercício você deve:
+1) Criar um arquivo Gulpfile que deverá executar as tarefas:
+
+compilação do SASS;
+compressão de imagens disponibilizadas no Material de apoio;
+compressão de código JavaScript.
+2) Criar um branch chamada exercicio_gulp.
+3) Armazenar o arquivo Gulpfile nesta branch.
+4) Enviar o link do repositório através da plataforma.
+
+
+npm install --global gulp-cli
+npm init
+npm install --save-dev gulp
+no package json: em script: "gulp": "gulp"
+
+npm install --save-dev gulp-sass
+npm install --save-dev gulp-sourcemaps
+npm install gulp-imagemin --save-dev
+npm install --save-dev uglify
+npm install gulp-uglify --save-dev

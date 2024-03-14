@@ -1,0 +1,1 @@
+var nome="fernando";function soma(n){return n}
