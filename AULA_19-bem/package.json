@@ -1,0 +1,16 @@
+{
+  "name": "aula_19-bem",
+  "version": "1.0.0",
+  "description": "1) Os arquivos estão disponibilizados abaixo, no material de apoio. O HTML fornecido já possui classes; atualize essas classes de acordo com a Metodologia BEM. Ou seja, faça a separação em blocos, elementos e/ou modificadores.",
+  "main": "index.js",
+  "scripts": {
+    "less": "less-watch-compiler ./src/style ./dist/style",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
+  }
+}
