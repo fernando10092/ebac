@@ -1,0 +1,94 @@
+body {
+  font-size: 80px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/11/01/18/17/christmas-2908901_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: white;
+  width: 80px;
+  display: inline;
+}
+
+p {
+  color: white;
+}
+
+.container {
+  background-color: rgba(1, 1, 1, 0.7);
+  width: 70%;
+  height: 95vh;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 40%;
+}
+.container .writeToday {
+  color: white;
+}
+.container .writeCenter {
+  background-color: black;
+  border-radius: 10%;
+  color: #f1c40f;
+}
+.container #tempo {
+  color: white;
+  display: inline;
+}
+.container #contCenter {
+  margin-top: 17%;
+}
+.container #contCenter #dias {
+  font-size: 80px;
+  background-image: conic-gradient(white, gray, black);
+  display: inline;
+  color: #f1c40f;
+}
+.container #contCenter #hora {
+  font-size: 80px;
+  background-image: conic-gradient(white, gray, black);
+  display: inline;
+  color: #f1c40f;
+}
+.container #contCenter #minutos {
+  font-size: 80px;
+  background-image: conic-gradient(white, gray, black);
+  display: inline;
+  color: #f1c40f;
+}
+.container #contCenter #segundos {
+  font-size: 80px;
+  background-image: conic-gradient(white, gray, black);
+  display: inline;
+  color: #f1c40f;
+}
+.container #dataFinal {
+  margin-top: 80px;
+  color: #f1c40f;
+}
+.container .icone {
+  width: 50px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    background-color: rgba(1, 1, 1, 0.2);
+    height: 100vh;
+  }
+  .container #contCenter #dias {
+    font-size: 40px;
+  }
+  .container #contCenter #hora {
+    font-size: 40px;
+  }
+  .container #contCenter #minutos {
+    font-size: 40px;
+  }
+  .container #contCenter #segundos {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=main.min.css.map */

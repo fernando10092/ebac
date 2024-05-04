@@ -1,0 +1,149 @@
+//$corCounterBack: linear-gradient(white, black);
+$corCounterBack: conic-gradient(white, gray, black);
+$corCounterFont: #f1c40f;
+$corContainer: rgb(1,1,1,0.7);
+$fontSize: 80px;
+$widthCounter: 50px;
+
+body {
+
+    font-size: $fontSize;
+    background-image: url("https://cdn.pixabay.com/photo/2017/11/01/18/17/christmas-2908901_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  
+
+
+}
+
+h1 {
+
+    color: white;
+    width: 80px;
+    display: inline;
+ 
+}
+
+p{
+    color: white;
+}
+
+
+
+.container {
+    background-color: $corContainer;
+    width: 70%;
+    height: 95vh;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 40%;
+
+
+    //align-content: center;
+
+    .writeToday{
+        color: white;
+    }
+
+    .writeCenter{
+     
+        background-color: black;
+        border-radius: 10%;
+        color: $corCounterFont;
+    }
+    #tempo {
+        color: white;
+        display: inline;
+
+    }
+
+
+
+    #contCenter {
+
+        margin-top: 17%;
+    
+
+        #dias {
+
+            font-size: $fontSize;
+            background-image: $corCounterBack;
+            display: inline;
+            color: $corCounterFont;
+
+        }
+
+        #hora {
+
+            font-size: $fontSize;
+            background-image: $corCounterBack;
+            display: inline;
+            color: $corCounterFont;
+
+        }
+
+        #minutos {
+
+            font-size: $fontSize;
+            background-image: $corCounterBack;
+            display: inline;
+            color: $corCounterFont;
+        }
+
+        #segundos {
+            font-size: $fontSize;
+            background-image: $corCounterBack;
+            display: inline;
+            color: $corCounterFont;
+         
+        }
+
+
+    }
+
+    #dataFinal {
+
+
+        margin-top: 80px;
+        color: $corCounterFont;
+     
+    }
+
+    .icone{
+        width: 50px;
+       
+    }
+
+
+}
+
+
+@media (max-width:800px) {
+
+    
+    .container{
+
+        background-color: rgb(1,1,1,0.2);
+        height: 100vh;
+        #contCenter{
+         
+            #dias{
+                font-size: 40px;
+            }
+            #hora{
+                font-size: 40px;
+            }
+            #minutos{
+                font-size: 40px;
+            }
+            #segundos{
+                font-size: 40px;
+            }
+        }
+
+    }
+    
+    
+}
