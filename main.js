@@ -9,16 +9,27 @@ class Pessoa{
 const pessoa = new Pessoa()
 console.log(pessoa)
 
-///CLASSE INFO ADICIONAL - HERANÇA COM EXTENDS
+///CLASSE INFO DADOS - HERANÇA COM EXTENDS 1
 class Adicional extends Pessoa{ 
-    cpf = "XXX.XXX.XXX.XX";
-    rg = "XXXXXXXX-X"
-    num_titulo = "XXXXXXXXXXXXXX";
-    cnh = "XXXXXXXXXXXXXX"
+    cpf = "444.444.444-44";
+    rg = "39674076-5"
+    num_titulo = "6666666666666";
+    cnh = "155000"
 }
 
 const adicional = new Adicional()
 console.log(adicional)
+
+///CLASSE INFO BANCARIA - HERANÇA COM EXTENDS 2
+class Adicional2 extends Pessoa{ 
+    banco = "Itau";
+    agencia = "9999-9"
+    conta = "00000-0";
+    
+}
+
+const adiciona2 = new Adicional2()
+console.log(adiciona2)
 
 
 ///FUNCAO CONSTRUTORA
@@ -40,3 +51,13 @@ function Salario(cpf, nome, cargo, valor){
 const salario = new Salario("428.000.000-00", "Adriana", "Contador", 5000);
 console.log(salario)
 
+///FUNCAO CONSTRUTORA - HERANÇA COM CALL 2()
+function Banco(banco, agencia, conta){
+    Profissao.call(this, "168.111.111.45", "Lilian", "Medica")
+    this.banco = banco,
+    this.agencia = agencia,
+    this.conta = conta
+}
+
+const banco = new Banco("Itau", "0100-4", "06565-5");
+console.log(banco);
