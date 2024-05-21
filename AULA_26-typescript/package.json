@@ -1,0 +1,16 @@
+{
+  "name": "aula_26-typescript",
+  "version": "1.0.0",
+  "description": "A entrega deste exercício consiste em:",
+  "main": "main.js",
+  "scripts": {
+    "node": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^22.2.0"
+  }
+}
