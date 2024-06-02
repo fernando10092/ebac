@@ -45,6 +45,8 @@
 
   }
 
+  var estado = true;
+
 
 </script>
 
@@ -65,10 +67,15 @@
       <option value="4">Divisão</option>
     </select>
     <input disabled id="resultado" type="number">
-    <br>
+    <!-- <br>
     <input @change="operacao()" placeholder="digite um valor" id="input1" type="number">
     <br>
-    <input @change="operacao()" placeholder="digite um valor" id="input2" type="number">
+    <input @change="operacao()" placeholder="digite um valor" id="input2" type="number"> -->
+
+    <br>
+    <input v-if="estado"  @keyup="operacao()" placeholder="digite um valor" id="input1" type="number">
+    <br>
+    <input v-if="estado" @keyup="operacao()" placeholder="digite um valor" id="input2" type="number">
 
     <div id="msg"></div>
    
