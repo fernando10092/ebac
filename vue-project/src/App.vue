@@ -1,54 +1,51 @@
 <script setup>
+//IMPORTAÇÃO
+import {reactive} from 'vue';
+
+//REACTIVE
+const estado = reactive({
+
+  //VAR
+  numero1: 0,
+  numero2: 0,
+  op: "---",
+  sinal: "---",
+  teste: function (){
+
+    //CONDIÇÕES PARA OPERAÇÕES
+    if(estado.op==="1"){
+      var {numero1, numero2} = estado;
+      var somatoria = parseInt(numero1) + parseInt(numero2);
+      this.sinal = "OPERAÇÃO DE SOMA SELECIONADA";
+      return somatoria;
+
+  }else if(estado.op==="2"){
+      var {numero1, numero2} = estado;
+      var somatoria = parseInt(numero1) - parseInt(numero2);
+      this.sinal = "OPERAÇÃO DE SUBTRAÇÃO SELECIONADA";
+      return somatoria;
+  }else if(estado.op==="3"){
+      var {numero1, numero2} = estado;
+      var somatoria = parseInt(numero1) * parseInt(numero2);
+      this.sinal = "OPERAÇÃO DE MULTIPLICAÇÃO SELECIONADA";
+      return somatoria;
+  }else if(estado.op==="4"){
+      var {numero1, numero2} = estado;
+      var somatoria = parseInt(numero1) / parseInt(numero2);
+      this.sinal = "OPERAÇÃO DE DIVISÃO SELECIONADA";
+      return somatoria;
+  }
+    
+  }
+});
+
 
   //TEXTO
   var abc = "CALCULADORA";
 
 
-  //OPERAÇÃO
-  function operacao(){
-
-    console.log(document.getElementById("seletor").value);
-
-    if(document.getElementById("input1").value != "" && document.getElementById("input2").value != ""){
-  
-      if(document.getElementById("seletor").value === "1"){
-      var valor = parseFloat(document.getElementById("input1").value) + parseFloat(document.getElementById("input2").value);
-      document.getElementById("resultado").value = valor;
-      document.getElementById("msg").innerHTML = "";
- 
-
-    }else if(document.getElementById("seletor").value === "2"){
-      var valor = parseFloat(document.getElementById("input1").value) - parseFloat(document.getElementById("input2").value);
-      document.getElementById("resultado").value = valor;
-      document.getElementById("msg").innerHTML = "";
- 
-
-    }else if(document.getElementById("seletor").value === "3"){
-      var valor = parseFloat(document.getElementById("input1").value) * parseFloat(document.getElementById("input2").value);
-      document.getElementById("resultado").value = valor;
-      document.getElementById("msg").innerHTML = "";
-     
-
-    }else if(document.getElementById("seletor").value === "4"){
-      var valor = parseFloat(document.getElementById("input1").value) / parseFloat(document.getElementById("input2").value);
-      document.getElementById("resultado").value = valor;
-      document.getElementById("msg").innerHTML = "";
-
-    }
-
-    }else(
-      console.log("DIGITE OS VALORES"),
-      document.getElementById("msg").innerHTML = "Selecione a operação e digite os valores"
-      
-    )
-
-
-  }
-
-  var estado = true;
-
-
 </script>
+
 
 <template>
 
@@ -59,31 +56,27 @@
     </h1>
 
   <div id="calculadora">
-    <select id="seletor" class="form-select" aria-label="Disabled select example">
+    <select @change="evento => estado.op = evento.target.value" id="seletor" class="form-select" aria-label="Disabled select example">
       <option selected>Escolha a Operação Matematica</option>
       <option value="1">Soma</option>
       <option value="2">Subtração</option>
       <option value="3">Multiplicação</option>
       <option value="4">Divisão</option>
     </select>
-    <input disabled id="resultado" type="number">
-    <!-- <br>
-    <input @change="operacao()" placeholder="digite um valor" id="input1" type="number">
-    <br>
-    <input @change="operacao()" placeholder="digite um valor" id="input2" type="number"> -->
+
+    <div id="resultado">{{ estado.teste() }}</div>
+
 
     <br>
-    <input v-if="estado"  @keyup="operacao()" placeholder="digite um valor" id="input1" type="number">
+    <input @keyup="evento => estado.numero1 = evento.target.value" id="i1" type="number">
     <br>
-    <input v-if="estado" @keyup="operacao()" placeholder="digite um valor" id="input2" type="number">
-
-    <div id="msg"></div>
-   
-  
+    <input @keyup="evento => estado.numero2 = evento.target.value" id="i2" type="number">
+    <br>  
+    <div id="operacao">{{ estado.sinal }}</div>
     
+  
   </div>
  
-
 
   </div>
 
@@ -109,6 +102,7 @@ body{
     background-color: #40739e;
     width: 70%;
     height: 600px;
+    
   }
 
   h1{
@@ -132,6 +126,7 @@ body{
     background-color: #2c3e50;
     text-align: center;
     height: 400px;
+  
 
   }
 
@@ -139,8 +134,12 @@ body{
     margin-top: 10px;
     background-color: #2f3640;
     height: 70px;
+    width: 400px;
     color: white;
     border: solid;
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 8px;
   }
 
   #seletor{
@@ -149,6 +148,10 @@ body{
     text-align: center;
     color: white;
     
+  }
+
+  .erro{
+    border-color: red;
   }
 
 </style>
