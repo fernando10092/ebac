@@ -2,10 +2,10 @@
   "name": "aula_34-cypress",
   "version": "1.0.0",
   "description": "No exercício você deverá:",
-  "main": "cypress.config.js",
+  "main": "index.js",
   "scripts": {
-    "cypress": "cypress",
-    "test": "npm run cypress open"
+    "cypress":"cypress",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
