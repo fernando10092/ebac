@@ -1,41 +1,22 @@
 import csv
-from sys import argv, exit
-
-import matplotlib.pyplot as plt
+from sys import argv
 import pandas as pd
 import seaborn as sns
 
-if len(argv) < 2:
-    print("Uso: python visualizacao.py <grafico_CDI>")
-    exit(1)
+# Extraindo as colunas hora e taxa
+df = pd.read_csv('./taxa-cdi.csv')
 
+# Criando o gráfico
+grafico = sns.lineplot(x=df['hora'], y=df['taxa'])
 
-output_image = argv[1]
-# Verifica se o arquivo CSV existe e pode ser lido
-try:
-    df = pd.read_csv('./taxa-cdi.csv')
-except FileNotFoundError:
-    print("Erro: Arquivo 'taxa-cdi.csv' não encontrado.")
-    exit(1)
-except pd.errors.EmptyDataError:
-    print("Erro: Arquivo 'taxa-cdi.csv' está vazio.")
-    exit(1)
-except pd.errors.ParserError:
-    print("Erro: Arquivo 'taxa-cdi.csv' está mal formatado.")
-    exit(1)
+# Definindo os ticks do eixo X
+grafico.set_xticks(range(len(df)))  # Garantindo que os ticks estão bem definidos
 
-# Verifica se as colunas 'hora' e 'taxa' existem no DataFrame
-if 'hora' not in df.columns or 'taxa' not in df.columns:
-    print("Erro: Arquivo 'taxa-cdi.csv' deve conter as colunas 'hora' e 'taxa'.")
-    exit(1)
+# Definindo as etiquetas do eixo X e rotacionando-as
+_ = grafico.set_xticklabels(labels=df['hora'], rotation=90)
 
-# Extraindo as colunas hora e taxa e salvando no grafico
-plt.figure(figsize=(10, 6))
-grafico = sns.lineplot(x='hora', y='taxa', data=df)
+# Verificando se o argumento foi passado; caso contrário, usando um nome padrão
+output_filename = argv[1] if len(argv) > 1 else "grafico"
 
-# Configurando o gráfico e rotacionando os labels do eixo x
-grafico.set_xticks(range(len(df['hora'])))
-grafico.set_xticklabels(labels=df['hora'], rotation=90)
-
-grafico.get_figure().savefig(f"{output_image}.png")
-plt.close()
+# Salvando o gráfico
+grafico.get_figure().savefig(f"{output_filename}.png")
